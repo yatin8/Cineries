@@ -20,8 +20,6 @@ console.log(process.env.DATABASEURL);
 var url = process.env.DATABASEURL || "mongodb://localhost/cineries" ;
 mongoose.connect(url);
     
-//mongoose.connect("mongodb://yatin:yatin08101997@ds139614.mlab.com:39614/cineries");
-//mongoose.connect("mongodb://localhost/cineries");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
